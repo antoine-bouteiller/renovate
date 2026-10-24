@@ -14,10 +14,7 @@
   "configMigration": true,
   "minimumReleaseAge": "1 day",
   "labels": ["renovate"],
-  "gitIgnoredAuthors": [
-    "41898282+github-actions[bot]@users.noreply.github.com",
-    "227055450+renohate[bot]@users.noreply.github.com"
-  ],
+  "gitIgnoredAuthors": ["41898282+github-actions[bot]@users.noreply.github.com"],
   "pre-commit": {
     "enabled": true
   },
