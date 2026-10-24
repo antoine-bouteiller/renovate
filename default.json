@@ -13,6 +13,10 @@
   "dependencyDashboard": false,
   "configMigration": true,
   "minimumReleaseAge": "1 day",
+  "lockFileMaintenance": {
+    "description": "Lock refreshes have no release timestamp, so a release age would keep them pending forever",
+    "minimumReleaseAge": null
+  },
   "labels": ["renovate"],
   "gitIgnoredAuthors": ["41898282+github-actions[bot]@users.noreply.github.com"],
   "pre-commit": {

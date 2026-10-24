@@ -12,7 +12,7 @@ Shared [Renovate](https://docs.renovatebot.com/) presets for my repositories.
 | Preset                                              | Content                                                          |
 | --------------------------------------------------- | ---------------------------------------------------------------- |
 | `github>antoine-bouteiller/renovate`                | Base settings, vulnerability alerts, and the three presets below |
-| `github>antoine-bouteiller/renovate:automerge`        | Auto-merge patch and minor updates, and GitHub Actions digests    |
+| `github>antoine-bouteiller/renovate:automerge`        | Auto-merge patch, minor, lock file maintenance, and Actions digests |
 | `github>antoine-bouteiller/renovate:groups`           | Package groups; a group without matching packages is a no-op     |
 | `github>antoine-bouteiller/renovate:semantic-commits` | Conventional commit types, scopes, and update-type labels        |
 

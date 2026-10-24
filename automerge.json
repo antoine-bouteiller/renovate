@@ -3,8 +3,8 @@
   "automergeStrategy": "rebase",
   "packageRules": [
     {
-      "description": "Auto-merge all patch and minor updates",
-      "matchUpdateTypes": ["patch", "minor"],
+      "description": "Auto-merge all patch, minor, and lock file maintenance updates",
+      "matchUpdateTypes": ["patch", "minor", "lockFileMaintenance"],
       "automerge": true,
       "automergeType": "pr",
       "ignoreTests": false

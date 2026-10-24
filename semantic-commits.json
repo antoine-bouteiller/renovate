@@ -41,7 +41,24 @@
       "commitMessageTopic": "package {{depName}}"
     },
     {
-      "matchDepTypes": ["devDependencies"],
+      "matchManagers": ["mise"],
+      "addLabels": ["renovate/mise"],
+      "commitMessageTopic": "tool {{depName}}"
+    },
+    {
+      "matchManagers": ["pip_requirements", "pip-compile", "pep621", "uv"],
+      "addLabels": ["renovate/python"],
+      "commitMessageTopic": "package {{depName}}"
+    },
+    {
+      "matchDepTypes": [
+        "devDependencies",
+        "dependency-groups",
+        "project.optional-dependencies",
+        "tool.uv.dev-dependencies",
+        "dev",
+        "optional-dependencies"
+      ],
       "semanticCommitScope": "deps-dev"
     }
   ]
