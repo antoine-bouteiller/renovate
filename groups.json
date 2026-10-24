@@ -13,7 +13,7 @@
     },
     {
       "description": "Commitlint Group",
-      "groupName": "Commitlint",
+      "groupName": "commitlint",
       "matchPackageNames": ["@commitlint/**"],
       "minimumGroupSize": 2
     },
@@ -50,7 +50,7 @@
     },
     {
       "description": "Semantic Release Group",
-      "groupName": "Semantic Release",
+      "groupName": "semantic-release",
       "matchPackageNames": ["semantic-release", "@semantic-release/**", "conventional-changelog-conventionalcommits"],
       "minimumGroupSize": 2
     },
