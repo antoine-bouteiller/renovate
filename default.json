@@ -1,0 +1,32 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":disableRateLimiting",
+    ":ignoreUnstable",
+    "helpers:pinGitHubActionDigestsToSemver",
+    "github>antoine-bouteiller/renovate:automerge",
+    "github>antoine-bouteiller/renovate:groups",
+    "github>antoine-bouteiller/renovate:semantic-commits"
+  ],
+  "ignorePresets": ["mergeConfidence:all-badges"],
+  "dependencyDashboard": false,
+  "configMigration": true,
+  "minimumReleaseAge": "1 day",
+  "labels": ["renovate"],
+  "gitIgnoredAuthors": [
+    "41898282+github-actions[bot]@users.noreply.github.com",
+    "227055450+renohate[bot]@users.noreply.github.com"
+  ],
+  "pre-commit": {
+    "enabled": true
+  },
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "addLabels": ["security"],
+    "semanticCommitType": "fix",
+    "semanticCommitScope": "deps",
+    "minimumReleaseAge": null,
+    "schedule": ["at any time"]
+  }
+}

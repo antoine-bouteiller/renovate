@@ -1,0 +1,73 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Bun runtime, its types, and packageManager must move together",
+      "groupName": "bun",
+      "matchDepNames": ["bun", "@types/bun"]
+    },
+    {
+      "description": "Cloudflare Group",
+      "groupName": "cloudflare",
+      "matchPackageNames": ["wrangler", "@cloudflare/vite-plugin"]
+    },
+    {
+      "description": "Commitlint Group",
+      "groupName": "Commitlint",
+      "matchPackageNames": ["@commitlint/**"],
+      "minimumGroupSize": 2
+    },
+    {
+      "description": "Drizzle Group",
+      "groupName": "drizzle",
+      "matchPackageNames": ["drizzle-orm", "drizzle-kit"],
+      "versioning": "docker"
+    },
+    {
+      "description": "Effect Group",
+      "groupName": "effect",
+      "matchPackageNames": ["effect", "@effect/**", "!@effect/tsgo"]
+    },
+    {
+      "description": "Lexical Group",
+      "groupName": "lexical",
+      "matchPackageNames": ["lexical", "@lexical/**"]
+    },
+    {
+      "description": "Oxc Group",
+      "groupName": "oxc",
+      "matchPackageNames": ["oxlint", "oxfmt", "oxlint-tsgolint", "@oxlint/plugins", "@effect/tsgo"]
+    },
+    {
+      "description": "Pi Coding Agent Group",
+      "groupName": "pi-agent",
+      "matchPackageNames": ["@earendil-works/*"]
+    },
+    {
+      "description": "React Group",
+      "groupName": "react",
+      "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"]
+    },
+    {
+      "description": "Semantic Release Group",
+      "groupName": "Semantic Release",
+      "matchPackageNames": ["semantic-release", "@semantic-release/**", "conventional-changelog-conventionalcommits"],
+      "minimumGroupSize": 2
+    },
+    {
+      "description": "Serwist Group",
+      "groupName": "serwist",
+      "matchPackageNames": ["serwist", "@serwist/**"]
+    },
+    {
+      "description": "Tanstack Group",
+      "groupName": "tanstack",
+      "matchPackageNames": ["@tanstack/**"]
+    },
+    {
+      "description": "Void Group",
+      "groupName": "void",
+      "matchPackageNames": ["void", "@void/**"]
+    }
+  ]
+}
