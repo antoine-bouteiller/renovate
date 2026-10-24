@@ -6,7 +6,6 @@
       "labels": ["type/major"],
       "semanticCommitType": "chore",
       "semanticCommitScope": "deps",
-      "commitMessagePrefix": "{{semanticCommitType}}({{semanticCommitScope}})!:",
       "commitMessageExtra": "( {{currentVersion}} ➜ {{newVersion}} )"
     },
     {
