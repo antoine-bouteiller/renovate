@@ -18,6 +18,18 @@
     "minimumReleaseAge": null
   },
   "labels": ["renovate"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Bun pinned by the bun-flake input; the flake.lock refresh is left to the repository",
+      "managerFilePatterns": ["/(^|/)flake\\.nix$/"],
+      "matchStrings": ["github:antoine-bouteiller/bun-flake/v(?<currentValue>[^\"]+)\""],
+      "depNameTemplate": "bun",
+      "packageNameTemplate": "antoine-bouteiller/bun-flake",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v(?<version>.+)$"
+    }
+  ],
   "gitIgnoredAuthors": ["41898282+github-actions[bot]@users.noreply.github.com"],
   "pre-commit": {
     "enabled": true
