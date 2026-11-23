@@ -4,70 +4,83 @@
     {
       "description": "Bun runtime, its types, and packageManager must move together",
       "groupName": "bun",
-      "matchDepNames": ["bun", "@types/bun"]
+      "matchDepNames": ["bun", "@types/bun"],
+      "schedule": ["at any time"]
     },
     {
       "description": "Cloudflare Group",
       "groupName": "cloudflare",
-      "matchPackageNames": ["wrangler", "@cloudflare/vite-plugin"]
+      "matchPackageNames": ["wrangler", "@cloudflare/vite-plugin"],
+      "schedule": ["* 0-3 * * 1"]
     },
     {
       "description": "Commitlint Group",
       "groupName": "commitlint",
       "matchPackageNames": ["@commitlint/**"],
-      "minimumGroupSize": 2
+      "minimumGroupSize": 2,
+      "schedule": ["* 0-3 * * 1"]
     },
     {
       "description": "Drizzle Group",
       "groupName": "drizzle",
       "matchPackageNames": ["drizzle-orm", "drizzle-kit"],
-      "versioning": "docker"
+      "versioning": "docker",
+      "schedule": ["at any time"]
     },
     {
       "description": "Effect Group",
       "groupName": "effect",
-      "matchPackageNames": ["effect", "@effect/**", "!@effect/tsgo"]
+      "matchPackageNames": ["effect", "@effect/**", "!@effect/tsgo"],
+      "schedule": ["at any time"]
     },
     {
       "description": "Lexical Group",
       "groupName": "lexical",
-      "matchPackageNames": ["lexical", "@lexical/**"]
+      "matchPackageNames": ["lexical", "@lexical/**"],
+      "schedule": ["at any time"]
     },
     {
       "description": "Oxc Group",
       "groupName": "oxc",
-      "matchPackageNames": ["oxlint", "oxfmt", "oxlint-tsgolint", "@oxlint/plugins", "@effect/tsgo"]
+      "matchPackageNames": ["oxlint", "oxfmt", "oxlint-tsgolint", "@oxlint/plugins", "@effect/tsgo"],
+      "schedule": ["* 0-3 * * 1"]
     },
     {
       "description": "Pi Coding Agent Group",
       "groupName": "pi-agent",
-      "matchPackageNames": ["@earendil-works/*"]
+      "matchPackageNames": ["@earendil-works/*"],
+      "schedule": ["* 0-3 * * 1"]
     },
     {
       "description": "React Group",
       "groupName": "react",
-      "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"]
+      "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
+      "schedule": ["at any time"]
     },
     {
       "description": "Semantic Release Group",
       "groupName": "semantic-release",
       "matchPackageNames": ["semantic-release", "@semantic-release/**", "conventional-changelog-conventionalcommits"],
-      "minimumGroupSize": 2
+      "minimumGroupSize": 2,
+      "schedule": ["* 0-3 * * 1"]
     },
     {
       "description": "Serwist Group",
       "groupName": "serwist",
-      "matchPackageNames": ["serwist", "@serwist/**"]
+      "matchPackageNames": ["serwist", "@serwist/**"],
+      "schedule": ["at any time"]
     },
     {
       "description": "Tanstack Group",
       "groupName": "tanstack",
-      "matchPackageNames": ["@tanstack/**"]
+      "matchPackageNames": ["@tanstack/**"],
+      "schedule": ["at any time"]
     },
     {
       "description": "Void Group",
       "groupName": "void",
-      "matchPackageNames": ["void", "@void/**"]
+      "matchPackageNames": ["void", "@void/**"],
+      "schedule": ["at any time"]
     }
   ]
 }

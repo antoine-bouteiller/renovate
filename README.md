@@ -11,9 +11,10 @@ Shared [Renovate](https://docs.renovatebot.com/) presets for my repositories.
 
 | Preset                                              | Content                                                          |
 | --------------------------------------------------- | ---------------------------------------------------------------- |
-| `github>antoine-bouteiller/renovate`                | Base settings, vulnerability alerts, the `bun-flake` input bump, and the three presets below |
+| `github>antoine-bouteiller/renovate`                | Base settings, vulnerability alerts, the `bun-flake` input bump, and the four presets below |
 | `github>antoine-bouteiller/renovate:automerge`        | Auto-merge patch, minor, lock file maintenance, and Actions digests |
-| `github>antoine-bouteiller/renovate:groups`           | Package groups; a group without matching packages is a no-op     |
+| `github>antoine-bouteiller/renovate:dev`              | Weekly grouped non-major dev dependency updates (Monday before 4am) |
+| `github>antoine-bouteiller/renovate:groups`           | Package groups; tooling groups update weekly, runtime groups at any time |
 | `github>antoine-bouteiller/renovate:semantic-commits` | Conventional commit types, scopes, and update-type labels        |
 
 Keep repository-specific rules (custom managers, disabled packages, strategy overrides) in the repository's own `renovate.json5`; its `packageRules` apply after these presets.

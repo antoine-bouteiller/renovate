@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Batch tooling churn: dev deps update weekly, collapsing minor+patch bursts",
+      "matchDepTypes": ["devDependencies", "dependency-groups", "tool.uv.dev-dependencies", "dev"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "schedule": ["* 0-3 * * 1"],
+      "groupName": "dev dependencies (non-major)"
+    }
+  ]
+}
