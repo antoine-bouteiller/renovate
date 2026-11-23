@@ -46,7 +46,7 @@
       "commitMessageTopic": "tool {{depName}}"
     },
     {
-      "matchManagers": ["pip_requirements", "pip-compile", "pep621", "uv"],
+      "matchManagers": ["pip_requirements", "pip-compile", "pep621"],
       "addLabels": ["renovate/python"],
       "commitMessageTopic": "package {{depName}}"
     },
